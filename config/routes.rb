@@ -2,7 +2,7 @@ Pinteresting::Application.routes.draw do
   resources :pins
 
   devise_for :users
-  root "pages#home" # Creates the "root_path"
+  root "pins#index" # Creates the "root_path"
   get "about" => "pages#about" # Creates the "about_path"
   get "project" => "pages#project" # Creates the "project_path"
 
